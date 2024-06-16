@@ -297,3 +297,85 @@
 // 지역 변수와 전역 변수
 // 함수 안에서 선언된(함수 스코프)는 지역 변수가된다
 // 함수 외부에서 선언된 변수는 전역 변수이다
+
+
+
+// 객체 지향 프로그래밍 OOP
+// 객체는 데이터와 동작을 가지고 있다
+// 데이터는 특성 값이다
+// 메소드 동작, 속성(property)
+
+// 내장 객체: 자바스크립트에 내장된 객체
+// Date, String, Array와 같은 객체들이 내장객체이다
+// 사용자 정의 객체: 개발자가 정의하여 사용하는 객체이다
+
+// 내장 객체는 핵심객체와 DOM, BOM 객체로 나눌 수 있다
+// 핵심 객체 : 기본적인 객체인 Date, String, Array들이 핵심 객체이다
+
+// DOM: 브라우저가 HTML문서를 파싱하여 각 요소들을 객체 트리로 정의한것
+// BOM: 브라우저의 종류나 크기등의 정보를 제공하는 객체
+
+// 객체 생성
+// new 키워드를 사용한다
+// let today = new Date()
+// let books = new Array("HTML", "JAVA", "C")
+
+// 객체 멤버 사용하기
+// dot . 을 사용한다
+// today.getDate()
+
+// Date 객체
+// 날짜와 시간을 저장하고 있는 객체이다
+// 내장 객체중 Date 객체는 상당히 많이 사용된다
+// let date = new Date()
+// let date = new Date('August 24, 2023 18:30:00')
+// let date = new Date(2023,7,21)
+// document.write(date)
+
+
+// Date 객체 메소드
+// let date = new Date();
+// document.write(date.getDate() + "<br>") // 몇일
+// document.write(date.getDay() + "<br>")  // 요일을 숫자로 표현
+// document.write(date.getFullYear() + "<br>") // 4자리 년도
+// document.write(date.getHours() + "<br>")  // 시간 0~23
+// document.write(date.getMilliseconds() + "<br>") // 밀리초
+// document.write(date.getMinutes() + "<br>") // 몇 분
+// document.write(date.getMonth() + "<br>") // 몇 월
+// document.write(date.getSeconds() + "<br>") // 몇 초
+
+
+// 날짜 비교
+// const date1 = new Date('2024/06/15')
+// const dateNow = new Date('2024/06/16');
+// document.write((dateNow - date1))   // 밀리세컨드로 빼져있음
+
+
+// String 객체
+// String 객체는 텍스트를 저장하고 조작하는 개게로 아주 많이 사용된다
+// 문자열에는 2가지 종류가 있다
+// 문자열 리터럴, 문자열 객체
+// 리터럴은 따옴표
+// 객체는 new
+
+// let s1 = 'abc'
+// let s2 = new String('abc')
+// console.log(s1)
+// console.log(s2)
+// console.log(typeof(s1))
+// console.log(typeof(s2))
+
+
+// 문자열 길이와 개별 문자 접근
+// let length = 'abc'.length
+// let ch = 'abc'[1]
+
+// String 객체 메소드
+// let s = 'abcde'
+// document.write(s.charAt(1) + "<br>")   // 지정된 위치의 문자를 반환한다
+// document.write(s.indexOf('c') + "<br>")  // 지정된 문자의 index를 반환 없으면 -1을 반환
+// document.write(s.replace('c', 'f') + "<br>")   // 지정된 값을 대체값으로 반환
+// document.write(s.slice(2,4) + "<br>")      // 시작 및 끝 인덱스를 기반으로 일부 추출 새 문자열 반환
+// document.write(s.substring(2,4) + "<br>")
+// document.write(s.toUpperCase() + "<br>")
+// document.write(s.split('') + "<br>")
